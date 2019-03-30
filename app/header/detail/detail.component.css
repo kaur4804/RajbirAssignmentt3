@@ -1,0 +1,28 @@
+.gridArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Navigation Navigation" "imgArea listArea";
+    grid-gap: 2px;
+    place-items: center;
+}
+.common {background-color: blue; border: thick solid green; padding: 10px; margin: 10px; }
+.imgArea{grid-area: imgArea;}
+.listArea{grid-area: listArea;}
+.Navigation{grid-area: Navigation; text-align: center;}
+
+
+@media screen and (orientation: portrait) {
+    .gridArea{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "imgArea"
+        "ListArea"
+        "inputArea";
+        grid-gap: 10px;
+
+    }
+
+}

@@ -1,0 +1,16 @@
+<section class="gridArea">
+  <div class="imgArea common" id="imgArea">
+
+  </div>
+  <div class="listArea common" id="listArea">
+    </div>
+
+    <div class="Navigation common">
+      <button *ngFor="let song of mysongs; let x=index"
+      (click)='changePara(x)'>song{{x}}
+      </button>
+    
+    </div>
+
+    
+</section>
